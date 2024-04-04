@@ -1,15 +1,16 @@
 import { Request,Response } from "express"
+import { notesBd } from "../Models/notes.model"
 
 
 export const NotesController={
     getAllNotes:async(req:Request,res:Response)=>{
         try{
-            res.json('server ok')
+     
         }catch(e){
 
         }
     },
-    getAllFromUser:async(req:Request,res:Response)=>{
+    getAllNotesFromUser:async(req:Request,res:Response)=>{
         try{
             res.json('server ok')
         }catch(e){
