@@ -32,10 +32,10 @@ export const notesBd=sequelizeConnection.define('notesBd',{
             type:DataTypes.TEXT,   
         },
     },
-  { tableName: 'users', timestamps:false}
+  { tableName: 'notes', timestamps:false}
   
   )
 
-
-  notesBd.belongsTo(usersBd,{as:'user'})
-  usersBd.hasMany(notesBd,{as:'notes'})
+  usersBd.hasMany(notesBd,{as:'notes',foreignKey:'userid'})
+  notesBd.belongsTo(usersBd,{as:'user',foreignKey:'userid'})
+ 

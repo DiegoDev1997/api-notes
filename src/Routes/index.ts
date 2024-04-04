@@ -10,6 +10,7 @@ Routes.post('/auth/sigup',userController.register)
 Routes.get('/users/:id',userController.getUserById)
 Routes.put('/users/:id',userController.updateUserById)
 Routes.delete('/users/:id',userController.deleteUserById)
+
 Routes.get('/notes',NotesController.getAllNotes)
 Routes.get('/users/:userid/notes',NotesController.getAllNotesFromUser)
 Routes.post('/notes',NotesController.addNote)
