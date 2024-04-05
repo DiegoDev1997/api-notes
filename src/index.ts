@@ -1,4 +1,4 @@
-import express, { Router } from 'express'
+import express from 'express'
 import Routes from './Routes'
 import dotenv from 'dotenv'
 import cors from 'cors'
